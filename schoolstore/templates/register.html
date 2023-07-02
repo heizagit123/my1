@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+        <div class="row" >
+
+<center><h1>REGISTER</h1></center>
+        <center><form  method="post" enctype="multipart/form-data" action="register" class="mb-3 shadow">
+         {% csrf_token %}
+            <div class="form-group"  class="col-lg-8">
+        <label class="col-lg-2 control-label">USER NAME</label>
+  &nbsp;&nbsp;  <input type="text"   name="username"  class="col-md-2.5" placeholder="Enter user name"  > </div><br>
+     <div class="form-group"  class="col-lg-8">
+    <label class="col-lg-2 control-label">PASSWORD </label>&nbsp;&nbsp;&nbsp;
+&nbsp;  <input type="password" name="password" placeholder="Enter password" >&nbsp;&nbsp;</div><br>
+        <div class="form-group"  class="col-lg-8">
+        <label class="col-lg-2 control-label">CONFIRM PASSWORD</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" name="password1"  class="col-md-2.5" placeholder="Re-enter password" >&nbsp;&nbsp;</div>
+        <br>
+            <div class="form-group">
+    <input type="submit"  class="btn btn-success" value="SUBMIT">&nbsp;&nbsp;&nbsp;
+
+</div>
+        </div>
+</div>
+</form>
+
+</center>
+{% for msg in messages %}
+<h2>{{msg}}</h2>
+{% endfor %}
+{% endblock %}}

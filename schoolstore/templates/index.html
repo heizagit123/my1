@@ -1,0 +1,349 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About us</title>
+<link rel="shortcut icon" href="#">
+<meta charset="utf-8">
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Travello template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo"><a href="index.html">EPSILON COLLEGE</a></div>
+							<nav class="main_nav">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+<!--									<li><a href="index.html">Login</a></li>-->
+<!--									<li class="active"><a href="about.html">About us</a></li>-->
+
+
+
+									<li><a href="login">Login</a></li>
+									<li><a href="register">Register</a></li>
+<!--									<li class="nav-item"><li>DEPARTMENT-->
+
+        </li>&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            DEPARTMENT
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Computer_science">Computer Science</a></li>
+            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Commerce">Commerce</a></li>
+            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Politics">Politics</a></li>
+             <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Zoology">Zoology</a></li>
+              <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Psychology">Psychology</a></li>
+          </ul>
+        </li><li class="nav-item dropdown">
+
+<!--&lt;!&ndash;-->
+
+
+							<div class="header_phone ml-auto">contact: 987654324</div>
+<!--							<br><br>-->
+<!--									<center><input type ="button" name="go" value="GO"></center>-->
+<!--							&lt;!&ndash; Hamburger &ndash;&gt;-->
+
+							<div class="hamburger ml-auto">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_social d-flex flex-row align-items-center justify-content-start">
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu">
+		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
+			<div class="menu_logo"><a href="index.html"></a></div>
+			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
+		</div>
+		<div class="menu_content">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About us</a></li>
+<!--				<li><a href="#">Services</a></li>-->
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="menu_social">
+			<div class="menu_phone ml-auto">contact:234567890</div>
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="background_image" style="background-image:url({% static 'images/collegepic.jpg' %})"></div>
+
+	</div>
+
+
+
+	<!-- About -->
+
+<!--	<div class="about">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col text-center">-->
+<!--&lt;!&ndash;					<div class="section_subtitle">simply amazing places</div>&ndash;&gt;-->
+<!--					<div class="section_title"><h2> about us</h2></div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="row about_row">-->
+<!--				<div class="col-lg-6">-->
+<!--					<div class="about_content">-->
+<!--						<div class="text_highlight"> Established in 1983, EPSILON located in the Kottayam district of Kerala. The university has around 100 affiliated colleges under its jurisdiction spread over five districts in central Kerala. Also known as MG University or MGU, it is ranked among the top 50 universities in India.-->
+<!--</div>-->
+<!--						<div class="about_text">-->
+<!--							<p> popularly known as MK University is a renowned government University located in Kerala. MG University is ARIIA and NAAC accredited with Grade ‘A’. MG University obtained 31st rank in Universities category by NIRF in 2023. The University consists of  23 University Departments, 2 International and Inter University Centre, 7 Inter University Centres, 10 Inter School Centres, 77 Govt./Aided Affiliated Colleges, 10 Autonomous Colleges (of which 8 are Colleges with a Potential for Excellence), 200 Unaided Affiliated Colleges and 199 Recognized Research Centres</p>-->
+<!--						</div>-->
+<!--						<div class="button about_button"><a href="#">read more</a></div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="col-lg-6">-->
+<!--					<div class="about_image"><img src="{% static 'images/studentlot.jpg' %}" alt=""></div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+
+<!--	&lt;!&ndash; Milestones &ndash;&gt;-->
+
+<!--	<div class="milestones">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				-->
+<!--				&lt;!&ndash; Milestone &ndash;&gt;-->
+<!--				<div class="col-lg-3 milestone_col">-->
+<!--					<div class="milestone text-center">-->
+<!--						<div class="milestone_icon"><img src="{% static 'images/mountain.svg' %}" alt=""></div>-->
+<!--						<div class="milestone_counter" data-end-value="17">0</div>-->
+<!--						<div class="milestone_text">Online Courses</div>-->
+<!--					</div>-->
+<!--				</div>-->
+
+<!--				&lt;!&ndash; Milestone &ndash;&gt;-->
+<!--				<div class="col-lg-3 milestone_col">-->
+<!--					<div class="milestone text-center">-->
+<!--						<div class="milestone_icon"><img src="{% static 'images/island.svg' %}" alt=""></div>-->
+<!--						<div class="milestone_counter" data-end-value="213">0</div>-->
+<!--						<div class="milestone_text">Students</div>-->
+<!--					</div>-->
+<!--				</div>-->
+
+<!--				&lt;!&ndash; Milestone &ndash;&gt;-->
+<!--				<div class="col-lg-3 milestone_col">-->
+<!--					<div class="milestone text-center">-->
+<!--						<div class="milestone_icon"><img src="{% static 'images/camera.svg' %}" alt=""></div>-->
+<!--						<div class="milestone_counter" data-end-value="11923">0</div>-->
+<!--						<div class="milestone_text">Teachers</div>-->
+<!--					</div>-->
+<!--				</div>-->
+
+<!--				&lt;!&ndash; Milestone &ndash;&gt;-->
+<!--				<div class="col-lg-3 milestone_col">-->
+<!--					<div class="milestone text-center">-->
+<!--						<div class="milestone_icon"><img src="{% static 'images/boat.svg' %}" alt=""></div>-->
+<!--						<div class="milestone_counter" data-end-value="15">0</div>-->
+<!--						<div class="milestone_text">Countries</div>-->
+<!--					</div>-->
+<!--				</div>-->
+
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+
+	<!-- Why Choose Us -->
+
+<!--	<div class="why">-->
+<!--		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/stud.jpg' %}" data-speed="0.8"></div>-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col text-center">-->
+<!--&lt;!&ndash;					<div class="section_subtitle">simply amazing pl</div>&ndash;&gt;-->
+<!--&lt;!&ndash;					<div class="section_title"><h2>Why choose us?</h2></div>&ndash;&gt;-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="row why_row">-->
+<!--				-->
+				<!-- Why item -->
+
+
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+
+<!--	&lt;!&ndash; Team &ndash;&gt;-->
+
+<!--	<div class="team">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col text-center">-->
+<!--					<div class="section_subtitle">simply amazing places</div>-->
+<!--					<div class="section_title"><h2>Meet the Team</h2></div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="row team_row">-->
+
+<!--				&lt;!&ndash; Team Item &ndash;&gt;-->
+<!--				{% for x in result2 %}-->
+<!--				<div class="col-xl-3 col-md-6 team_col">-->
+<!--					<div class="team_item d-flex flex-column align-items-center justify-content-start text-center">-->
+<!--						<div class="team_image"><img src="{{x.img.url}}" alt=""></div>-->
+<!--						<div class="team_content">-->
+<!--							<div class="team_title"><a href="#">{{x.name}}</a></div>-->
+<!--							<div class="team_text">-->
+<!--								<p>{{x.desc}}</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				{% endfor %}-->
+
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+
+<!--	&lt;!&ndash; Footer &ndash;&gt;-->
+
+<!--	<footer class="footer">-->
+<!--		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/as.jpg' %}" data-speed="0.8"></div>-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col">-->
+<!--					<div class="newsletter">-->
+<!--						<div class="newsletter_title_container text-center">-->
+<!--&lt;!&ndash;							<div class="newsletter_title">Subscribe to our newsletter to get the latest trends & news</div>&ndash;&gt;-->
+<!--&lt;!&ndash;							<div class="newsletter_subtitle">Join our database NOW!</div>&ndash;&gt;-->
+<!--						</div>-->
+<!--						<div class="newsletter_form_container">-->
+<!--							<form action="#" class="newsletter_form d-flex flex-md-row flex-column align-items-start justify-content-between" id="newsletter_form">-->
+<!--								<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">-->
+<!--									<div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Name" required="required"><div class="input_border"></div></div>-->
+<!--									<div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Your e-mail" required="required"><div class="input_border"></div></div>-->
+<!--								</div>-->
+<!--&lt;!&ndash;								<div><button class="newsletter_button">subscribe</button></div>&ndash;&gt;-->
+<!--							</form>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div class="row footer_contact_row">-->
+<!--				<div class="col-xl-10 offset-xl-1">-->
+<!--					<div class="row">-->
+
+<!--						&lt;!&ndash; Footer Contact Item &ndash;&gt;-->
+<!--						<div class="col-xl-4 footer_contact_col">-->
+<!--							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">-->
+<!--&lt;!&ndash;								<div class="footer_contact_icon"><img src="{% static 'images/sign.svg' %}" alt=""></div>&ndash;&gt;-->
+<!--&lt;!&ndash;								<div class="footer_contact_title">give us a call</div>&ndash;&gt;-->
+<!--								<div class="footer_contact_list">-->
+<!--&lt;!&ndash;									<ul>&ndash;&gt;-->
+<!--&lt;!&ndash;										<li>Office Landline: +44 5567 32 664 567</li>&ndash;&gt;-->
+<!--&lt;!&ndash;										<li>Mobile: +44 5567 89 3322 332</li>&ndash;&gt;-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--						&lt;!&ndash; Footer Contact Item &ndash;&gt;-->
+<!--						<div class="col-xl-4 footer_contact_col">-->
+<!--							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">-->
+<!--&lt;!&ndash;								<div class="footer_contact_icon"><img src="{% static 'images/trekking.svg' %}" alt=""></div>&ndash;&gt;-->
+<!--&lt;!&ndash;								<div class="footer_contact_title">come & drop by</div>&ndash;&gt;-->
+<!--								<div class="footer_contact_list">-->
+<!--									<ul style="max-width:190px">-->
+<!--&lt;!&ndash;										<li>4124 Barnes Street, Sanford, FL 32771</li>&ndash;&gt;-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--						&lt;!&ndash; Footer Contact Item &ndash;&gt;-->
+<!--						<div class="col-xl-4 footer_contact_col">-->
+<!--							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">-->
+<!--&lt;!&ndash;								<div class="footer_contact_icon"><img src="{% static 'images/around.svg' %}" alt=""></div>&ndash;&gt;-->
+<!--&lt;!&ndash;								<div class="footer_contact_title">send us a message</div>&ndash;&gt;-->
+<!--								<div class="footer_contact_list">-->
+<!--									<ul>-->
+<!--&lt;!&ndash;										<li>youremail@gmail.com</li>&ndash;&gt;-->
+<!--&lt;!&ndash;										<li>Office@yourbusinessname.com</li>&ndash;&gt;-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--		<div class="col text-center">&lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;-->
+<!--Copyright &copy;<script>document.write(new.js Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
+<!--&lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt; </div>-->
+
+<!--	</footer>-->
+<!--</div>-->
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/TweenMax.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/TimelineMax.min.js' %}"></script>
+<script src="{% static 'plugins/scrollmagic/ScrollMagic.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/animation.gsap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/ScrollToPlugin.min.js' %}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static 'plugins/easing/easing.js' %}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'js/about.js' %}">
+
+
+
+</script>
+</html>

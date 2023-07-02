@@ -1,0 +1,106 @@
+
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+        <div class="row" ><center><h4>APPLICATION FORM</h4></center>
+        <center>
+
+
+            <form  method="post"   enctype="multipart/form-data" class="mb-3 shadow">
+            {% csrf_token %}
+                <div class="form-group">
+                    <label >Name:</label>
+                    <input type="text" name="name" placeholder="Enter your name"><br>
+                </div><br>
+                <div class="form-group">
+                    <label >Date of Birth</label>&nbsp;&nbsp;
+                    <input type="date" name="dob" size="10" placeholder="Enter your DOB:">
+                 </div><br>
+                <div class="form-group">
+                    <label class="col-lg-.5">Age:</label>&nbsp;&nbsp;
+                    <input type="text" name="age" placeholder="Enter your age">
+                </div><br>
+                <div class="form-group">
+                    <label>Gender:</label>&nbsp;&nbsp;
+                    <input type="radio" name="gender"  value="male"  >male
+                    <input type="radio" name="gender"  value="female">female<br>
+                </div><br>
+                <div class="form-group">
+                    <label >Phone No:</label>&nbsp;&nbsp;
+                    <input type="text" name="phone" placeholder="Enter your Number" >
+                </div><br>
+                <div class="form-group">
+                     <label >Email:</label>&nbsp;&nbsp;
+                     <input type="email" name="email" placeholder="Enter your email"></div><br>
+                <div class="form-group">
+                    <label > Address:</label>&nbsp;
+                    <textarea cols="20" rows="2" value="address" name="address" placeholder="Enter your address"></textarea></div><br>
+                <div class="form-group">
+                    <label >Department</label>
+                    <select name="department" id="typeSel" size="1">
+                    <option value="department" selected="selected">Select Department</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label >Course</label>
+                    <select name="course" id="fieldSel" size="1">
+                    <option value="course" selected="selected">Select course</option>
+                    </select>
+                </div>
+                <script>
+                    var typeObject = {
+                    ComputerScience: ["Bsc","Msc"],
+                     Commerce: ["Bcom","MCOm"],
+                     Politics: ["BA","MA"],
+                     Zoology: ["BSc","MSc"],
+                     Psychology: ["BA","MA"]
+    }
+                window.onload = function () {
+                var typeSel = document.getElementById("typeSel"),
+                fieldSel = document.getElementById("fieldSel")
+                for (var type in typeObject) {
+                typeSel.options[typeSel.options.length] = new Option(type, type);
+        }
+        typeSel.onchange = function () {
+            fieldSel.length = 1; // remove all options bar first
+            if (this.selectedIndex < 1) return; // done
+            var ft = typeObject[this.value];
+            for (var field in typeObject[this.value]) {
+                fieldSel.options[fieldSel.options.length] = new Option(ft[field], field);
+            }
+        }
+        typeSel.onchange();
+    }
+ </script>
+                <br>
+                <div class="form-group">
+                    <label>Purpose:</label>
+                    <select name="purpose" id="purpose">
+                    <option value="Enquiry">Enquiry</option>
+                    <option value="Placeorder">Place order</option>
+                    <option value="Return">Return</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label >Materials:&nbsp;&nbsp;</label>&nbsp;
+                    <input type="checkbox"  name="materials"  value="pen">Pen
+                    <input type="checkbox"  name="materials"  value="paper">Paper
+                    <input type="checkbox" name="materials"  value="book">Book
+                    <input type="checkbox" name="materials"  value="record" checked="checked">Record
+                </div>
+                <br>
+                <center>
+                <div class="form-group">
+                <input type="submit"  class="btn btn-success" value="submit" onclick="alert('Order Confirmed!!!!');" >&nbsp;<a  href="/">LOGOUT</a>&nbsp;&nbsp;
+                </center>
+
+
+            </div></form>
+            </center></div>
+</div>
+
+
+{% endblock %}

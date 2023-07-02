@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+        <div class="row" >
+
+<center><h1>LOGIN</h1></center>
+        <center><form  method="post" action="register" class="mb-3 shadow">
+         {% csrf_token %}
+            <div class="form-group">
+        <label>USER NAME</label>
+  &nbsp;&nbsp;
+        <input type="text"  name="username" placeholder="Enter username"> </div><br>
+     <div class="form-group">
+    <label>PASSWORD </label>&nbsp;&nbsp;&nbsp;
+&nbsp;
+    <input type="password" name="password" placeholder="Enter password" >&nbsp;&nbsp;</div><br>
+
+    <br>
+
+<div class="form-group">
+    <input type="submit"  class="btn btn-success" value="submit">&nbsp;
+    <a href="/register"> Register</a>
+
+</div>
+
+        </div>
+</div>
+</form>
+
+</center>
+
+{% endblock %}
